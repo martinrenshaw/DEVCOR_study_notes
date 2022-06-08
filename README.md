@@ -2,11 +2,11 @@
 
 Note taking repo
 
-Mod 8 - Deploying Applications
+## Mod 8 - Deploying Applications
 
 ##################################################################################################################################################
 
-8.1 - 12-Factor App Methodology
+### 8.1 - 12-Factor App Methodology
 
 eveolved from the cloud/PaaS deployments.
 
@@ -39,8 +39,18 @@ admin process - admin/mgmt tasks as oneoff processess.
 
 ##################################################################################################################################################
 
-8.2 - Containerize Applications using Docker
+### 8.2 - Containerize Applications using Docker
 
 minikube
 
 this is extra
+
+> blockquote
+
+` some code here `
+
+```
+some
+code
+block here
+```
