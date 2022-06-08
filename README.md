@@ -113,3 +113,6 @@ The architecture is comprised of three components:
 - Event Consumer: Event consumers are components that can perform a specific task, based on the event that is processed.
 
 ### 9.5 Microservice Architecture Concepts
+
+Q. How can you efficiently scale an application when designing with microservices architecture?
+A. An individual service can be deployed to a new machine, preferably in a **container**, and a **load balancer** needs to be configured for traffic balancing.
