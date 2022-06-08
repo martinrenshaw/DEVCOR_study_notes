@@ -77,6 +77,8 @@ They can load-balance traffic based on the request resource.
 
 - backend - PHP, Python, Ruby, Java, .NET, and so on. The back-end sets the default behavior of the application state. It defines rules what can be done on the state and how the front end can interact with the core of the application.
 
+sample script to interact with Cisco DNA
+
 ```python
 import requests
 
@@ -91,3 +93,23 @@ r = requests.get(f'{base_url}/dna/intent/api/v1/site-health', headers=headers)
 r.raise_for_status()
 sites = r.json()['response']
 ```
+
+### 9.4 Event-Driven Architecture Concepts
+
+flow of information is determined by the stream of events
+Events are significant state changes inside a system.
+Events do not travel outside the system, event notifications (or messages) do.
+
+The EDA architecture can be implemented with two different types of topologies.
+
+The mediator topology is used when there is a need for you to orchestrate several event steps through a central mediator, and the broker topology is better suited for chaining events together without a central mediator. It is important for you to know the differences between these two topologies in order to understand which one is better for your situation.
+
+The architecture is comprised of three components:
+
+-Event Emitter: Event emitters gather the state changes required for an event to happen within a system and send them to the event channel.
+
+-Event Channel: Event channel is used to forward the events to an event consumer. It can also do some preprocessing of the events before they are sent. Event channels often include messaging queues, to distribute messages horizontally or to prevent the channel from being overwhelmed.
+
+-Event Consumer: Event consumers are components that can perform a specific task, based on the event that is processed.
+
+### 9.5 Microservice Architecture Concepts
