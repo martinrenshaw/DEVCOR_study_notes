@@ -115,4 +115,55 @@ The architecture is comprised of three components:
 ### 9.5 Microservice Architecture Concepts
 
 Q. How can you efficiently scale an application when designing with microservices architecture?
+
 A. An individual service can be deployed to a new machine, preferably in a **container**, and a **load balancer** needs to be configured for traffic balancing.
+
+### 9.6 Effective Distributed Application Logging Strategies
+
+The goal of distributed logging is to give you one place where you can find all the logs.
+
+Q. Which process or property of the data is the most important for effective distributed logging?
+A. data aggregation
+
+### 9.7 Using Distributed Logging to Diagnose Problems
+
+The primary concept of distributed tracing is to label the log when a request first appears in the system. As the request makes its journey, each log entry contains the same label that was assigned at the source of the request. This label indicates an activity that the system performs on each request. By using the label and the time stamp, you can quickly analyze the path or the activity that was performed on each request over multiple microservices.
+
+OpenTracing and OpenCensus distributed tracing frameworks are now merged into a single project called OpenTelemetry, which is meant to replace both projects in the future.
+
+Q. How can you achieve distributed tracing?
+A. Assign the label when the request enters the system.
+
+### 9.8 Diagnose Problems Using Application Logs
+
+LAB
+
+- Graylog server
+- login admin/admin
+- In the navigation bar, choose the System tab and then the Inputs option.
+
+### 9.9 Application Monitoring with Cisco AppDynamics
+
+As instrumentation code can observe the communication of application code with other systems, Cisco AppDynamics is able to create a map of application components and graphically represent how they communicate—an application topology, if you will.
+
+Q. Which two types of monitoring agents are supported by Cisco AppDynamics? (Choose two.)
+A. Machine
+A. Application Server
+
+### 9.10 Limitations of Distributed Systems and CAP Theorem
+
+Networking Pitfalls
+
+- Consistency: Responses provide up-to-date data or no data at all.
+
+- Availability: Responses always provide data, even if it is not up-to-date.
+
+- Partition tolerance: System continues operation in face of network failure.
+
+Q. What does the CAP theorem state about a distributed system?
+A. A system can be available and consistent if there are no network partitions.
+
+### 9.11 Overcoming Challenges in Distributed Systems
+
+Bulkhead pattern,
+Circuit Breaker pattern,
