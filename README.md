@@ -49,10 +49,30 @@ this is extra
 
 ` some code here `
 
-```
+```python
 some
 code
 block here
 ```
 
 ## Mod 9 - Understanding Distributed Systems
+
+- when writing a new application, where might performance issues arise as you scale?
+- At what threshold do the benifits of a distributed system outweigh the challenges?
+
+### 9.2 - Distributed Application Concepts
+
+monolith - spof
+three tier - layer architecture for, use dns or lb to distribue. flexible and convenient for development and scaling.
+
+HAProxy software lb - l4 or l7 LB, frontend(VIP listner), backend(pool of servers)
+could also use NGINX from F5 to do similar tasks.
+
+What is the advantage of application-layer load balancers?
+They can load-balance traffic based on the request resource.
+
+### 9.3 Custom Dashboard Example
+
+- frontend - HTML, Cascading Style Sheets (CSS), JavaScript, .NET, react.js, Angular, and similar frameworks whose goal is to present the data to the user in a structured, understandable way, aiming for the best user experience.
+
+- backend - PHP, Python, Ruby, Java, .NET, and so on. The back-end sets the default behavior of the application state. It defines rules what can be done on the state and how the front end can interact with the core of the application.
