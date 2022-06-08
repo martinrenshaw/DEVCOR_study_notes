@@ -1,6 +1,6 @@
 # DEVCOR_study_notes
 
-Note taking repo
+Note taking repo :weary:
 
 ## Mod 8 - Deploying Applications
 
@@ -106,10 +106,10 @@ The mediator topology is used when there is a need for you to orchestrate severa
 
 The architecture is comprised of three components:
 
--Event Emitter: Event emitters gather the state changes required for an event to happen within a system and send them to the event channel.
+- Event Emitter: Event emitters gather the state changes required for an event to happen within a system and send them to the event channel.
 
--Event Channel: Event channel is used to forward the events to an event consumer. It can also do some preprocessing of the events before they are sent. Event channels often include messaging queues, to distribute messages horizontally or to prevent the channel from being overwhelmed.
+- Event Channel: Event channel is used to forward the events to an event consumer. It can also do some preprocessing of the events before they are sent. Event channels often include messaging queues, to distribute messages horizontally or to prevent the channel from being overwhelmed.
 
--Event Consumer: Event consumers are components that can perform a specific task, based on the event that is processed.
+- Event Consumer: Event consumers are components that can perform a specific task, based on the event that is processed.
 
 ### 9.5 Microservice Architecture Concepts
