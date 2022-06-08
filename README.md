@@ -2,9 +2,9 @@
 
 Note taking repo :weary:
 
-## Mod 8 - Deploying Applications
-
 ---
+
+## Mod 8 - Deploying Applications
 
 ### 8.1 - 12-Factor App Methodology
 
@@ -37,8 +37,6 @@ logs - send logs outside of the app to someother entity.
 
 admin process - admin/mgmt tasks as oneoff processess.
 
----
-
 ### 8.2 - Containerize Applications using Docker
 
 minikube
@@ -54,6 +52,8 @@ some
 code
 block here
 ```
+
+---
 
 ## Mod 9 - Understanding Distributed Systems
 
@@ -167,3 +167,5 @@ A. A system can be available and consistent if there are no network partitions.
 
 Bulkhead pattern,
 Circuit Breaker pattern,
+
+### 9.12 Summary Challenge
