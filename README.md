@@ -76,3 +76,18 @@ They can load-balance traffic based on the request resource.
 - frontend - HTML, Cascading Style Sheets (CSS), JavaScript, .NET, react.js, Angular, and similar frameworks whose goal is to present the data to the user in a structured, understandable way, aiming for the best user experience.
 
 - backend - PHP, Python, Ruby, Java, .NET, and so on. The back-end sets the default behavior of the application state. It defines rules what can be done on the state and how the front end can interact with the core of the application.
+
+```python
+import requests
+
+base_url = 'https://<IP or hostname>'
+r = requests.post(f'{base_url}/dna/system/api/v1/auth/token',
+                         auth=('<USERNAME>', '<PASSWORD>'))
+r.raise_for_status()
+token = r.json()['Token']
+
+headers = {'X-Auth-Token': token}
+r = requests.get(f'{base_url}/dna/intent/api/v1/site-health', headers=headers)
+r.raise_for_status()
+sites = r.json()['response']
+```
