@@ -175,25 +175,25 @@ You increase the number of nodes that serve the same core application component.
 
 1. What is REST?
 
-Match the mediator topology architecture components with their respective descriptions.
+1. Match the mediator topology architecture components with their respective descriptions.
 
-Which statement about microservice architecture is correct?
+1. Which statement about microservice architecture is correct?
 Each microservice runs the code for a specific functionality within an application.
 
-Which three options are components of the ELK stack? (Choose three.)
+1. Which three options are components of the ELK stack? (Choose three.)
 Elasticsearch
 Logstash
 Kibana
 
-Which two options are examples of popular distributed tracing frameworks? (Choose two.)
+1. Which two options are examples of popular distributed tracing frameworks? (Choose two.)
 OpenTracing
 OpenCensus
 
-Which mechanism does Cisco AppDynamics use in application component discovery and performance data collection?
+1. Which mechanism does Cisco AppDynamics use in application component discovery and performance data collection?
 
-Which two assumptions related to network programming are correct? (Choose two.)
+1. Which two assumptions related to network programming are correct? (Choose two.)
 
-Match the concepts with their respective descriptions.
+1. Match the concepts with their respective descriptions.
 A way to avoid split-brain behavior - Quorum
 Isolates a single system failure - bulkhead pattern
 Used for improved handling of timeouts - Circuit breaker pattern
