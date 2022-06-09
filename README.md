@@ -170,10 +170,10 @@ Circuit Breaker pattern,
 
 ### 9.12 Summary Challenge
 
-Which statement describes horizontal scaling?
+1. Which statement describes horizontal scaling?
 You increase the number of nodes that serve the same core application component.
 
-What is REST?
+1. What is REST?
 
 Match the mediator topology architecture components with their respective descriptions.
 
