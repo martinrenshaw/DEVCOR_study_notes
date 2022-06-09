@@ -225,6 +225,7 @@ PATCH
 POST
 
 DELETE
+
 ---
 
 Mediator topology contains four different architecture components, where each one has its distinct role:
@@ -236,6 +237,7 @@ Event mediator: Central orchestration component that receives the initial event(
 Event channel: Used to pass processing events from the mediator to an event processor. These are usually implemented as message queues or event processors.
 
 Event processor: Listens on event channels and executes suitable business logic, depending on the event. Each event processor should be a self-contained, independent, and loosely coupled component, that performs a very specific task within the system. It should not rely on other components, to perform its tasks
+
 ---
 
 Application Server Agent: For analyzing and monitoring code
@@ -243,6 +245,7 @@ Application Server Agent: For analyzing and monitoring code
 Machine Agent: For monitoring server utilization
 
 End User Agent: For performance visibility from the end user perspective
+
 ---
 
 The network is insecure.
@@ -254,6 +257,7 @@ Systems may fall under different administrative domains.
 The network introduces latency.
 
 The network bandwidth is limited
+
 ---
 
 ## 10 Orchestrating Network and Infrastructure
