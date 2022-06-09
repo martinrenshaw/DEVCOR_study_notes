@@ -198,3 +198,60 @@ A way to avoid split-brain behavior - Quorum
 Isolates a single system failure - bulkhead pattern
 Used for improved handling of timeouts - Circuit breaker pattern
 A network of interconnected services - Service mesh
+
+---
+As discussed so far, the front-end components can access the back end using the API calls. There are a couple of technologies that you can use for exposing the applications back end using an API. The most popular technology for the API, at least for web applications, is REST. REST is a programmatic interface that can be used on web services for providing interoperability between applications components. API requests may be read-only queries with no side-effects or produce modifications of the resources.
+
+REST APIs have become a standard for interacting with web services because of the following features:
+
+Lightweight: You don't need to install special libraries, compile code, or have expert skills in any programming language to use a REST-enabled web service.
+
+Flexible: You can use REST for simple requests or for complex operations.
+
+Scalable: REST requests run on the web server, so their ability to scale is entirely a function of the server's abilities.
+
+Platform-agnostic: Virtually any HTTP-enabled host can send REST requests and receive REST responses, whether on Windows, macOS, Linux or on a mobile device, such as a smart phone or a tablet.
+
+REST is based on the HTTP request-response model. This model uses Hypertext Transfer Protocol (HTTP or HTTPS) to send a request to a web service, which returns a response.
+
+The requests can be made with the following REST resource methods:
+
+GET
+
+PUT
+
+PATCH
+
+POST
+
+DELETE
+---
+
+Mediator topology contains four different architecture components, where each one has its distinct role:
+
+Event queue: A message queue that is used as an endpoint for events to be transported to the event mediator.
+
+Event mediator: Central orchestration component that receives the initial event(s) and makes organized asynchronous calls to different event channels. The event mediator does not contain the logic to process the initial event, it only knows which steps it must take to process it.
+
+Event channel: Used to pass processing events from the mediator to an event processor. These are usually implemented as message queues or event processors.
+
+Event processor: Listens on event channels and executes suitable business logic, depending on the event. Each event processor should be a self-contained, independent, and loosely coupled component, that performs a very specific task within the system. It should not rely on other components, to perform its tasks
+---
+
+Application Server Agent: For analyzing and monitoring code
+
+Machine Agent: For monitoring server utilization
+
+End User Agent: For performance visibility from the end user perspective
+---
+
+The network is insecure.
+
+Networking systems are diverse.
+
+Systems may fall under different administrative domains.
+
+The network introduces latency.
+
+The network bandwidth is limited
+---
