@@ -354,5 +354,10 @@ class UCS:
 ```
 
 ```sh
-netstat -rn
+~/$ python application.py --template template-web --prefix web-server --count 3
+The service profile web-server0 created successfully.
+The service profile web-server1 created successfully.
+The service profile web-server2 created successfully.
 ```
+
+### 10.3 Infrastructure as Code with Terraform
