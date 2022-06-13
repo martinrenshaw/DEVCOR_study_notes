@@ -11,7 +11,7 @@ I have a DRY sense of humor.
 """
 colour = 255,255,255
 font = ImageFont.truetype('/usr/share/fonts/truetype/ubuntu/Ubuntu-B.ttf', size=72)
-img = Image.open('back2.png')
+img = Image.open('back.png')
 # new = Image.new('RGB',(600,900),color=(11,18,71))
 
 # Calculate the average length of a single character of our font.
